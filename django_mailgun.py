@@ -58,7 +58,7 @@ class MailgunBackend(BaseEmailBackend):
             else:
                 raise
 
-        self._api_url = "https://api.mailgun.net/v3/%s/" % self._server_name
+        self._api_url = "https://api.eu.mailgun.net/v3/%s/" % self._server_name
         self._headers_map = HEADERS_MAP
 
     def open(self):
